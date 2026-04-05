@@ -194,26 +194,18 @@
             background: transparent;
         }
 
-        .navbar img {
-            width: 56px !important;
-            height: 56px !important;
-            min-width: 56px;
-            min-height: 56px;
-            object-fit: cover;
-        }
-
-        @media (min-width: 1024px) {
-            .navbar img {
-                width: 64px !important;
-                height: 64px !important;
-            }
-        }
-
-
         .navbar.scrolled {
             background: rgba(5, 5, 8, 0.85);
             backdrop-filter: blur(24px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .navbar-logo {
+            width: 48px !important;
+            height: 48px !important;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
         }
 
         .nav-link {
@@ -268,7 +260,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(5, 5, 8, 0.3) 0%, rgba(5, 5, 8, 0.5) 50%, rgba(5, 5, 8, 0.9) 100%);
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(5, 5, 8, 0.4) 60%, rgba(5, 5, 8, 0.8) 100%);
             z-index: -2;
         }
 
@@ -339,17 +331,14 @@
             max-width: 1200px;
             padding: 0 20px;
             opacity: 0;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .hero-title {
-            font-size: clamp(3.2rem, 6vw + 1rem, 90px);
+            font-size: clamp(3rem, 5vw + 1rem, 80px);
             font-weight: 800;
             line-height: 1.1;
-            margin: 15px 0;
+            margin: 10px 0;
             perspective: 1000px;
-            letter-spacing: -0.01em;
-            filter: drop-shadow(0 4px 12px rgba(124, 58, 237, 0.4));
         }
 
         .hero-title .char {
@@ -866,12 +855,6 @@
             transform: translateY(-2px);
         }
 
-        footer img {
-            width: 64px !important;
-            height: 64px !important;
-            object-fit: cover;
-        }
-
         .menu-btn {
             width: 30px;
             height: 20px;
@@ -1102,7 +1085,7 @@
     <nav class="navbar px-6 py-4 flex justify-between items-center max-w-7xl mx-auto w-full">
         <div class="flex items-center gap-3">
             <img src="logo.jpeg" alt="Mamitha Logo"
-                class="w-16 h-16 object-cover rounded-full border border-[rgba(255,255,255,0.1)] shadow-[0_0_15px_rgba(236,72,153,0.3)]">
+                class="navbar-logo border border-[rgba(255,255,255,0.1)] shadow-[0_0_15px_rgba(236,72,153,0.3)]">
             <div class="text-2xl font-bold font-heading hidden sm:block">
                 <span class="text-gradient">M.</span><span class="text-white">amitha</span>
             </div>
@@ -1874,7 +1857,7 @@
             <div>
                 <div class="flex items-center gap-3 mb-2">
                     <img src="logo.jpeg" alt="Mamitha Logo"
-                        class="w-20 h-20 object-cover rounded-full border border-[rgba(255,255,255,0.1)] shadow-[0_0_15px_rgba(236,72,153,0.3)]">
+                        class="navbar-logo border border-[rgba(255,255,255,0.1)] shadow-[0_0_15px_rgba(236,72,153,0.3)]">
                     <div class="text-3xl font-bold font-heading">
                         <span class="text-gradient">M.</span><span class="text-white">amitha</span>
                     </div>
