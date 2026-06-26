@@ -1093,9 +1093,31 @@
             border-bottom: 1px solid #E5E7EB;
             box-shadow: 0 1px 18px rgba(0,0,0,0.07);
         }
+        .navbar.scrolled .brand-second {
+            color: #111827 !important;
+        }
         .mobile-menu { background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); }
         .mobile-menu .nav-link { color: #111827; }
         .navbar.scrolled .menu-line { background: #111827; }
+
+        /* ---- FOOTER ---- */
+        footer {
+            background-color: #F8F9FA !important;
+            border-top: 1px solid #E5E7EB !important;
+        }
+        footer .brand-second {
+            color: #111827 !important;
+        }
+        footer p, footer span {
+            color: #4B5563 !important;
+        }
+        footer a:not(.brand-second) {
+            background-color: #E2E8F0 !important;
+            color: #111827 !important;
+        }
+        footer a:not(.brand-second):hover {
+            color: #FFFFFF !important;
+        }
 
         /* ---- TEXT GRADIENTS ---- */
         .text-gradient {
@@ -1241,7 +1263,7 @@
             <img src="logo.png" alt="Media Portfolio Logo"
                 class="w-16 h-16 object-cover rounded-xl">
             <div class="text-2xl font-bold font-heading hidden sm:block">
-                <span class="text-gradient">MEDIA</span><span class="text-white">/PORTFOLIO</span>
+                <span class="text-gradient">MEDIA</span><span class="brand-second text-white">/PORTFOLIO</span>
             </div>
         </div>
         <div class="nav-desktop hidden md:flex items-center gap-8">
@@ -2459,7 +2481,7 @@
                     <img src="logo.png" alt="Media Portfolio Logo"
                         class="w-20 h-20 object-cover rounded-xl">
                     <div class="text-3xl font-bold font-heading">
-                        <span class="text-gradient">MEDIA</span><span class="text-white">/PORTFOLIO</span>
+                        <span class="text-gradient">MEDIA</span><span class="brand-second text-white">/PORTFOLIO</span>
                     </div>
                 </div>
                 <p class="text-[#94a3b8] text-sm">Media Portfolio</p>
