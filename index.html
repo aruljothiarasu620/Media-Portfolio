@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arul JothiArasu V | Video Editor & Media Creator – Media Portfolio</title>
+    <title>Arul JothiArasu V | Video Editor & Media Creator – Mamitha Media Portfolio</title>
     <meta name="description"
-        content="Arul JothiArasu V is a professional video editor & media creator specializing in cinematic edits, Instagram Reels, YouTube videos, and event coverage. View my Media Portfolio.">
-    <meta property="og:title" content="Arul JothiArasu V | Video Editor – Media Portfolio">
+        content="Arul JothiArasu V is a professional video editor & media creator specializing in cinematic edits, Instagram Reels, YouTube videos, and event coverage. View the Mamitha Media Portfolio.">
+    <meta property="og:title" content="Arul JothiArasu V | Video Editor – Mamitha Media Portfolio">
     <meta property="og:description" content="Cinematic video editing, reels, and storytelling by Arul JothiArasu V.">
-    <meta property="og:url" content="https://media-portfolio-omega.vercel.app">
+    <meta property="og:url" content="https://mamitha.media">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Media Portfolio">
+    <meta name="twitter:title" content="Mamitha Media Portfolio">
     <meta name="twitter:description" content="Cinematic video editing by Arul JothiArasu V">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,13 +131,12 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: radial-gradient(circle at center, #111827 0%, #030712 100%);
+            background: #050508;
             z-index: 10000;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
         }
 
         body.lightbox-open {
@@ -154,42 +153,35 @@
             opacity: 0;
             transform: scale(0.5);
             font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(2.5rem, 8vw, 4.5rem);
-            font-weight: 900;
-            letter-spacing: 0.25em;
-            color: #ffffff;
-            text-shadow: 0 0 25px rgba(0, 201, 240, 0.7), 0 0 50px rgba(255, 105, 180, 0.4);
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            color: white;
         }
 
         .loader-line {
             width: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #00C9F0, #FF69B4);
-            margin-top: 15px;
-            box-shadow: 0 0 12px rgba(0, 201, 240, 0.8), 0 0 24px rgba(255, 105, 180, 0.6);
-            border-radius: 9999px;
+            height: 2px;
+            background: linear-gradient(90deg, #7c3aed, #2563eb, #06b6d4);
+            margin-top: 10px;
         }
 
         .loader-sub {
-            margin-top: 15px;
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: #00C9F0;
-            letter-spacing: 4px;
-            text-shadow: 0 0 10px rgba(0, 201, 240, 0.5);
+            margin-top: 10px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            color: #94a3b8;
+            letter-spacing: 2px;
             opacity: 0;
-            text-transform: uppercase;
         }
 
         .loader-progress {
             position: absolute;
             bottom: 0;
             left: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #00C9F0, #FF69B4);
+            height: 2px;
+            background: linear-gradient(90deg, #7c3aed, #2563eb, #06b6d4);
             width: 0;
-            box-shadow: 0 -2px 10px rgba(0, 201, 240, 0.5);
         }
 
         .navbar {
@@ -343,7 +335,6 @@
 
         .hero-title .char {
             display: inline-block;
-            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.8), 0 0 35px rgba(0, 0, 0, 0.5);
         }
 
         .scroll-indicator {
@@ -1083,9 +1074,9 @@
         .bg-\[\#0a0a0a\] { background-color: #F8F9FA !important; }
 
         /* ---- LOADER stays dark ---- */
-        #loader { background: radial-gradient(circle at center, #111827 0%, #030712 100%); }
-        .loader-text span { color: #ffffff !important; text-shadow: 0 0 25px rgba(0, 201, 240, 0.7), 0 0 50px rgba(255, 105, 180, 0.4); }
-        .loader-line, .loader-progress { background: linear-gradient(90deg, #00C9F0, #FF69B4); box-shadow: 0 0 12px rgba(0, 201, 240, 0.8), 0 0 24px rgba(255, 105, 180, 0.6); }
+        #loader { background: #111827; }
+        .loader-text span { color: #ffffff; }
+        .loader-line, .loader-progress { background: linear-gradient(90deg, #00C9F0, #FF69B4); }
 
         /* ---- CURSOR ---- */
         .custom-cursor { background: #111827; }
@@ -1247,9 +1238,8 @@
 
     <nav class="navbar px-6 py-4 flex justify-between items-center max-w-7xl mx-auto w-full">
         <div class="flex items-center gap-3">
-            <div class="w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-[0_0_15px_rgba(0,201,240,0.4)] border border-[rgba(255,255,255,0.15)]" style="background: linear-gradient(135deg, #00C9F0, #FF69B4);">
-                🎬
-            </div>
+            <img src="logo.jpeg" alt="Mamitha Logo"
+                class="w-16 h-16 object-cover rounded-full border border-[rgba(255,255,255,0.1)] shadow-[0_0_15px_rgba(236,72,153,0.3)]">
             <div class="text-2xl font-bold font-heading hidden sm:block">
                 <span class="text-gradient">M.</span><span class="text-white">amitha</span>
             </div>
@@ -1288,13 +1278,13 @@
         <div class="orb orb-3"></div>
 
         <div class="hero-content flex flex-col items-center justify-center pt-20">
-            <div class="text-white/80 tracking-[0.3em] text-sm uppercase mb-4 font-semibold" style="font-variant: small-caps; text-shadow: 0 2px 8px rgba(0,0,0,0.5);">Hi,
+            <div class="text-[#94a3b8] tracking-[0.3em] text-sm uppercase mb-4" style="font-variant: small-caps;">Hi,
                 I'm</div>
             <h1 class="hero-title text-white"></h1>
-            <div class="text-xl md:text-3xl text-white font-semibold mt-4 h-[40px]" style="text-shadow: 0 2px 10px rgba(0,0,0,0.6);">
+            <div class="text-xl md:text-3xl text-[#94a3b8] font-medium mt-4 h-[40px]">
                 <span class="typed-text"></span>
             </div>
-            <p class="text-white/90 max-w-md mx-auto mt-6 text-lg font-medium" style="text-shadow: 0 2px 10px rgba(0,0,0,0.6);">Crafting visual stories that move people.</p>
+            <p class="text-[#94a3b8] max-w-md mx-auto mt-6 text-lg">Crafting visual stories that move people.</p>
 
             <div class="flex flex-col sm:flex-row gap-6 mt-10">
                 <a href="#portfolio" class="magnetic-btn btn-primary">
@@ -1305,7 +1295,7 @@
                 </a>
             </div>
 
-            <div class="flex items-center gap-6 mt-16 text-sm text-white/90 font-semibold uppercase tracking-wider" style="text-shadow: 0 2px 8px rgba(0,0,0,0.6);">
+            <div class="flex items-center gap-6 mt-16 text-sm text-[#94a3b8] font-medium uppercase tracking-wider">
                 <div>50+ Projects</div>
                 <div class="h-6 w-px bg-gradient-to-b from-[#7c3aed] to-[#06b6d4]"></div>
                 <div>3+ Years Exp</div>
@@ -1315,7 +1305,7 @@
         </div>
 
         <div class="scroll-indicator">
-            <div class="text-xs uppercase tracking-widest text-white/85 font-semibold" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">Scroll</div>
+            <div class="text-xs uppercase tracking-widest text-[#94a3b8]">Scroll</div>
             <div class="mouse-icon"></div>
         </div>
     </section>
@@ -2466,22 +2456,10 @@
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
             <div>
                 <div class="flex items-center gap-3 mb-2">
-                    <svg class="w-16 h-16 drop-shadow-[0_0_8px_rgba(0,201,240,0.3)]" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="footer-logo-grad" x1="0%" y1="100%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#00C9F0" />
-                                <stop offset="100%" stop-color="#FF69B4" />
-                            </linearGradient>
-                        </defs>
-                        <path d="M 28 18 L 78 47 A 6 6 0 0 1 78 57 L 28 86 A 6 6 0 0 1 20 81 L 20 23 A 6 6 0 0 1 28 18 Z" 
-                              stroke="url(#footer-logo-grad)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="none" />
-                        <line x1="36" y1="28" x2="36" y2="72" stroke="url(#footer-logo-grad)" stroke-width="6" stroke-linecap="round" />
-                        <path d="M 44 29 L 68 43" stroke="url(#footer-logo-grad)" stroke-width="5" stroke-dasharray="3 4" stroke-linecap="round" />
-                        <line x1="44" y1="71" x2="52" y2="61" stroke="url(#footer-logo-grad)" stroke-width="5" stroke-linecap="round" />
-                        <line x1="56" y1="64" x2="62" y2="56" stroke="url(#footer-logo-grad)" stroke-width="5" stroke-linecap="round" />
-                    </svg>
-                    <div class="text-3xl font-bold font-heading tracking-tight">
-                        <span class="text-gradient">media</span><span class="text-white">portfolio</span>
+                    <img src="logo.jpeg" alt="Mamitha Logo"
+                        class="w-20 h-20 object-cover rounded-full border border-[rgba(255,255,255,0.1)] shadow-[0_0_15px_rgba(236,72,153,0.3)]">
+                    <div class="text-3xl font-bold font-heading">
+                        <span class="text-gradient">M.</span><span class="text-white">amitha</span>
                     </div>
                 </div>
                 <p class="text-[#94a3b8] text-sm">Media Portfolio</p>
@@ -2502,7 +2480,7 @@
 
         <div
             class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#94a3b8]">
-            <p>&copy; 2025 Media Portfolio — Arul JothiArasu V. All rights reserved.</p>
+            <p>&copy; 2025 Mamitha Media Portfolio — Arul JothiArasu V. All rights reserved.</p>
             <p>Made with ❤️ for visual storytelling</p>
         </div>
     </footer>
@@ -2564,7 +2542,7 @@
 
             if (document.querySelector('.hero-title')) {
                 const text = "Arul JothiArasu V"; const titleEl = document.querySelector('.hero-title'); titleEl.innerHTML = '';
-                text.split('').forEach(char => { const span = document.createElement('span'); span.textContent = char === ' ' ? '\u00A0' : char; span.className = 'char'; titleEl.appendChild(span); });
+                text.split('').forEach(char => { const span = document.createElement('span'); span.textContent = char === ' ' ? '\u00A0' : char; span.className = 'char text-gradient-animate'; titleEl.appendChild(span); });
                 gsap.fromTo('.hero-title .char', { y: 100, rotateX: 90, opacity: 0 }, { y: 0, rotateX: 0, opacity: 1, stagger: 0.04, duration: 0.8, ease: 'back.out(1.7)', delay: 2.5 });
             }
 
